@@ -1,0 +1,120 @@
+/* General Body Styling */
+body {
+    font-family: sans-serif; /* A common, clean font like Arial, Helvetica, or a similar sans-serif */
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0; /* Light gray background */
+}
+
+/* Header and Navigation Bar */
+header {
+    background-color: #4CAF50; /* Green background for the header/nav */
+    color:rgb(245, 229, 2);
+    padding: 15px 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px; /* Or a fixed width */
+    margin: 0 auto; /* Center the nav */
+    padding: 0 20px;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.nav-links li {
+    margin-left: 30px; /* Space between nav items */
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s ease; /* Smooth hover effect */
+}
+
+.nav-links a:hover {
+    color: #e0e0e0; /* Slightly lighter on hover */
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 60px 20px;
+    max-width: 800px;
+    margin: 40px auto; /* Center the hero content */
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.hero h1 {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #555;
+}
+
+/* Image Gallery Section */
+.image-gallery {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* Allow images to wrap to the next line */
+    gap: 20px; /* Space between images */
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.image-item {
+    flex: 1; /* Allow items to grow and shrink */
+    min-width: 200px; /* Minimum width for each image container */
+    max-width: 220px; /* Maximum width for each image container */
+    border-radius: 40px;
+    overflow: hidden; /* Ensures image corners are rounded */
+    box-shadow: 0 2px 5px rgba(16, 243, 73, 0.2);
+}
+
+.image-item img {
+    width: 100%;
+    height: 180px; /* Fixed height for images to maintain consistency */
+    display: block;
+    border-radius: 40px;
+    
+
+    object-fit: cover; /* Crops images to fit the container without distortion */
+    transition: transform 0.3s ease; /* Smooth zoom on hover */
+    box-shadow: #4CAF50
+   
+}
+
+.image-item img:hover {
+    transform: scale(1.05);
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px;
+    
+    color: rgb(7, 6, 6);
+    font-size: 14px;
+}
